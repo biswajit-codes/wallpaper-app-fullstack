@@ -37,7 +37,7 @@ const AvatarForm = () => {
 
 		await new Promise((r) => setTimeout(r, 1500));
 
-		const { isSuccess, message } = await updateAvatar(plainFiles[0], "abc");
+		const { isSuccess, message } = await updateAvatar(plainFiles[0]);
 
 		setIsUploading(false);
 

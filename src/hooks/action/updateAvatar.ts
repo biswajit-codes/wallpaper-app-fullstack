@@ -8,9 +8,7 @@ import { rm } from "node:fs/promises";
 import sharp from "sharp";
 import authUserServer from "./authUserServer";
 
-const updateAvatar = async (imgFile: File, abc: string) => {
-	console.log(abc);
-
+const updateAvatar = async (imgFile: File) => {
 	try {
 		const { image } = await authUserServer();
 
