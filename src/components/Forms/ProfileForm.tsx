@@ -52,19 +52,19 @@ const ProfileForm = ({ userName }: ProfileFormProps) => {
 			onSubmit={handleSubmit(nameHandeler)}
 			className="grid gap-6"
 			noValidate>
-			{/* Email field */}
+			{/* Name field */}
 			<Controller
 				name="name"
 				control={control}
 				render={({ field, fieldState }) => (
 					<Field data-invalid={fieldState.invalid}>
-						<FieldLabel htmlFor={field.name}>Email</FieldLabel>
+						<FieldLabel htmlFor={field.name}>Name</FieldLabel>
 						<Input
 							{...field}
 							id={field.name}
 							aria-invalid={fieldState.invalid}
-							placeholder="Enter your email"
-							autoComplete="email"
+							placeholder="Enter your name"
+							autoComplete="name"
 						/>
 						{fieldState.invalid && <FieldError errors={[fieldState.error]} />}
 					</Field>
