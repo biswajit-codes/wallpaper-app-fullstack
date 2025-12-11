@@ -7,7 +7,6 @@ const userSignUp = async ({ name, email, password }: RegisterType) => {
 			name,
 			email,
 			password,
-			image: "avatar.png",
 		});
 
 		if (error) {
