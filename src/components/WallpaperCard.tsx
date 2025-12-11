@@ -45,7 +45,7 @@ const WallpaperCard = ({
 								</div>
 								<div className="text-background flex gap-3">
 									<div className="">
-										<div className="">User Full Name</div>
+										<div className="">{user.name}</div>
 										<div className="font-semibold">#{category}</div>
 									</div>
 									<div>19 min ago</div>
@@ -54,8 +54,8 @@ const WallpaperCard = ({
 							<div className="">
 								<Button asChild>
 									<a
-										href={`upload/${image}`}
-										download={true}>
+										href={`/upload/${image}`}
+										download>
 										Download
 									</a>
 								</Button>
